@@ -10,9 +10,14 @@ Page({
         flag: true,
       })
     }
-   },
+  },
+  onShareAppMessage() {
+    return {
+      title: '自定义转发标题',
+    }
+  },
   bind(res) {
-    const that=this
+    const that = this
     wx.getUserProfile({
       desc: '用于完善头像和昵称',
       success: function (res) {
