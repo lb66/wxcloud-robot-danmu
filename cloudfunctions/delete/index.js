@@ -10,7 +10,7 @@ exports.main = async (event, context) => {
   db.collection('mess').where({
     // 当前时间的前10分钟
     date: _.lt(db.serverDate({
-      offset: -600000
+      offset: -1000*60*60*24
     }))
   }).remove()
 }
