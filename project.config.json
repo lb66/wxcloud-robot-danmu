@@ -15,7 +15,7 @@
   },
   "appid": "wxda53c38546a73a20",
   "projectname": "%E5%9C%A8%E7%BA%BF%E5%BC%B9%E5%B9%95",
-  "libVersion": "2.8.1",
+  "libVersion": "2.16.0",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
