@@ -8,9 +8,9 @@ const _ = db.command
 exports.main = async (event, context) => {
   // 删除特定条件的消息
   db.collection('mess').where({
-    // 当前时间的前10分钟
+    // 当前时间的前60分钟
     date: _.lt(db.serverDate({
-      offset: -1000*60*60
+      offset: -3600000
     }))
   }).remove()
 }
